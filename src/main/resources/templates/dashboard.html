@@ -1,0 +1,13 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Dashboard</title></head>
+<body>
+<h1>Welcome, <span th:text="${email}"></span></h1>
+<ul>
+    <li th:each="i : ${items}">
+        <span th:text="${i.name}"></span> — $<span th:text="${i.price}"></span>
+    </li>
+</ul>
+<form method="post" action="/logout"><button>Sign out</button></form>
+</body>
+</html>

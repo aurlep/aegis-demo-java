@@ -36,9 +36,9 @@
              (OWASP Dependency-Check, OSV-Scanner, Trivy) have something to report.
              commons-collections 3.2.1 is the classic Java deserialization gadget
              (CVE-2015-6420). It sits on the classpath unused, so the app still
-             starts. Do not "fix" it -- it is the point of a demo target.
-             (Log4Shell's log4j-core is deliberately NOT added: alongside Spring
-             Boot's log4j-to-slf4j bridge it can StackOverflow at startup.) -->
+             starts. Please leave it as-is; it is the point of a demo target.
+             Log4Shell's log4j-core is deliberately NOT added, because alongside
+             Spring Boot's log4j-to-slf4j bridge it can StackOverflow at startup. -->
         <dependency>
             <groupId>commons-collections</groupId>
             <artifactId>commons-collections</artifactId>
